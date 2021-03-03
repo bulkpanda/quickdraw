@@ -1,0 +1,10 @@
+body{
+    margin:0;
+    background: #333333;
+}
+
+
+.style1{font-family: 'Dancing Script', cursive;
+    font-family: 'Yellowtail', cursive; background: #333333;
+    color: #A9A9A9;}
+.onHoverDark:hover { background-color: #222222 !important; color: #BABABA !important;}

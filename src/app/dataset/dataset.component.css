@@ -1,0 +1,21 @@
+body{
+    margin:0;
+    background: #333333;
+}
+
+.style1{                                    
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Yellowtail', cursive;
+    color: #A9A9A9;}
+
+
+.style2{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    width: 70%;
+    color: #DDD;}  
+     
+.onHoverDark:hover { background-color: #444 !important; color: #DDD !important;}
+.background1{
+    background: #555555
+    }
