@@ -8,7 +8,6 @@ import { PlayComponent } from './play/play.component';
 import { DatasetComponent } from './dataset/dataset.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { CanvasComponent } from './canvas/canvas.component';
 
 //import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -17,8 +16,7 @@ import { CanvasComponent } from './canvas/canvas.component';
     AppComponent,
     HomeComponent,
     PlayComponent,
-    DatasetComponent,
-    CanvasComponent
+    DatasetComponent
   ],
   imports: [
     BrowserModule,
