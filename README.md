@@ -27,8 +27,39 @@ See inference_server.py file 'play' section to learn how to use the model for in
 just change the path value to try own images for testing.
 
 ## Loss and accuracy curves
-![Alt text](https://github.com/bulkpanda/quickdraw/plots/accuracy)
+Test accurcy v/s epochs
 ![GitHub Logo](/plots/accuracy.png)
+
+Train Loss v/s epochs
+![GitHub Logo](/plots/train_loss.png)
+
+## To train yourself
+
+Go to the trainmodel folder.
+change the basepath in config.py to your your training data.
+
+Assumed datastructure is:
+
+    └── Images (basepath)
+        ├── test
+        │   ├── class1 (eg: Bird)
+        │   |   |──img_1.jpg
+        │   |   |──img_2.jpg
+        │   |   |──img_3.jpg
+        │   |   |──img_4.jpg
+        |   |   |──.......
+        │   └── class2
+        ├   
+        ├── train
+        │   ├── class1 (eg: Bird)
+        │   |   |──img_1.jpg
+        │   |   |──img_2.jpg
+        │   |   |──img_3.jpg
+        │   |   |──img_4.jpg
+        |   |   |──.......
+        │   └── class2
+        
+Run the train.py file.
 
 # Frontend
 
