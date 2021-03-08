@@ -22,11 +22,12 @@ Deployed on AWS server http://18.221.124.152 .
 
 ## For pretrained model
 
-Located in saved_models by the name 100model.onnx.
-See inference_server.py file 'play' section to learn how to use the model for inference.
-just change the path value to try own images for testing.
+Located in saved_models by the name 100model.onnx. <br>
+See inference_server.py file 'play' section to learn how to use the model for inference. <br>
+Just change the path value to try own images for testing.
 
 ## Loss and accuracy curves
+
 Test accurcy v/s epochs
 ![GitHub Logo](/plots/accuracy.png)
 
