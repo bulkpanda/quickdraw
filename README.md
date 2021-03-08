@@ -2,6 +2,7 @@
 
 To make an online quickdraw recogniser similar to https://quickdraw.withgoogle.com/ using angular.
 Train a model to recognise doodles for 10 classes of images.
+Creating a webpage using angular.
 
 # Clone the repository
 
@@ -10,6 +11,23 @@ git clone --branch master https://github.com/bulkpanda/quickdraw
 # For installation of required packages
 
 pip install requirements.txt
+
+# Webpage
+
+The built files from 'ng build --prod' are located in docs, can use them directly for deployment.
+To run yourself clone the repo, go inside the folder quickdraw and run "ng build" command without the inverted comma.
+Deployed on AWS server http://18.221.124.152 .
+
+# The model
+
+## For pretrained model
+
+Located in saved_models by the name 100model.onnx.
+See inference_server.py file 'play' section to learn how to use the model for inference.
+just change the path value to try own images for testing.
+
+## Loss and accuracy curves
+
 
 # Frontend
 
