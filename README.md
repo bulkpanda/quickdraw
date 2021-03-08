@@ -1,3 +1,16 @@
+# Objective
+
+To make an online quickdraw recogniser similar to https://quickdraw.withgoogle.com/ using angular.
+Train a model to recognise doodles for 10 classes of images.
+
+# Clone the repository
+
+git clone --branch master https://github.com/bulkpanda/quickdraw
+
+# For installation of required packages
+
+pip install requirements.txt
+
 # Frontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
