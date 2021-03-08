@@ -19,6 +19,7 @@ allClasses=['Bird', 'Flower', 'Hand', 'House', 'Mug', 'Pencil', 'Spoon', 'Sun', 
 model_path='./saved_models/100model.onnx'
 ort_session=ort.InferenceSession(model_path)
 
+#===========================================Play=====================================================================
 def process(path):
     image=Image.fromarray(plt.imread(path)[:,:,3])
     image=np.array(image.resize((64,64)))
@@ -42,10 +43,10 @@ def play():
     os.makedirs(f'{datasetPath}/image', exist_ok=True)
     with open(f'{datasetPath}/image/imagetoinfer.png', 'wb') as fh:
         fh.write(base64.decodebytes(image_data))
-    path=datasetPath + '/image/'+'imagetoinfer.png'
+    path=datasetPath + '/image/'+'imagetoinfer.png' # change this value to test your own images
     return test(path)    
 
-
+#============================================Create Dataset=======================================================================
 datasetPath='data'
 
 @app.route('/upload_canvas', methods=['POST'])

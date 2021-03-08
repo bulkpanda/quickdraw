@@ -6,16 +6,16 @@ body{
 .style1{                                    
     font-family: 'Dancing Script', cursive;
     font-family: 'Yellowtail', cursive;
-    color: #A9A9A9;}
+    color: #000;}
 
 
 .style2{
     font-family: 'PT Sans', sans-serif;
     font-size: 15px;
     width: 70%;
-    color: #DDD;}  
+    color: #fff;}  
      
 .onHoverDark:hover { background-color: #444 !important; color: #DDD !important;}
 .background1{
-    background: #555555
+    background: #6666bb
     }
