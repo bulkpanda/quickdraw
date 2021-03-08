@@ -16,7 +16,7 @@ import numpy as np
 import onnxruntime as ort
 
 allClasses=['Bird', 'Flower', 'Hand', 'House', 'Mug', 'Pencil', 'Spoon', 'Sun', 'Tree', 'Umbrella']
-model_path='./saved_models/google_data/100model.onnx'
+model_path='./saved_models/100model.onnx'
 ort_session=ort.InferenceSession(model_path)
 
 def process(path):
