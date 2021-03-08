@@ -27,7 +27,7 @@ See inference_server.py file 'play' section to learn how to use the model for in
 just change the path value to try own images for testing.
 
 ## Loss and accuracy curves
-![alt text](https://github.com/bulkpanda/quickdraw/blob/plots/accuracy?raw=true)
+![alt text](https://github.com/bulkpanda/quickdraw/plots/accuracy?raw=true)
 
 # Frontend
 
