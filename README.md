@@ -1,7 +1,7 @@
 # Objective
 
-To make an online quickdraw recogniser similar to https://quickdraw.withgoogle.com/ using angular.
-Train a model to recognise doodles for 10 classes of images.
+To make an online quickdraw recogniser similar to https://quickdraw.withgoogle.com/ using angular. <br>
+Train a model to recognise doodles for 10 classes of images. <br>
 Creating a webpage using angular.
 
 # Clone the repository
@@ -14,8 +14,8 @@ pip install requirements.txt
 
 # Webpage
 
-The built files from 'ng build --prod' are located in docs, can use them directly for deployment.
-To run yourself clone the repo, go inside the folder quickdraw and run "ng build" command without the inverted comma.
+The built files from 'ng build --prod' are located in docs, can use them directly for deployment. <br>
+To run yourself clone the repo, go inside the folder quickdraw and run "ng build" command without the inverted comma. <br>
 Deployed on AWS server http://18.221.124.152 .
 
 # The model
@@ -36,8 +36,8 @@ Train Loss v/s epochs
 
 ## To train yourself
 
-Go to the trainmodel folder.
-change the basepath in config.py to your your training data.
+Go to the trainmodel folder. <br>
+change the basepath in config.py to your your training data. <br>
 
 Assumed datastructure is:
 
@@ -59,7 +59,7 @@ Assumed datastructure is:
         │   |   |──img_4.jpg
         |   |   |──.......
         │   └── class2
-        
+        <br>
 Run the train.py file.
 
 # Frontend
