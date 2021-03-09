@@ -128,7 +128,7 @@ export class DatasetComponent implements AfterViewInit {
   object_select(s:string){
     this.className=s;
     console.log(this.className)
-    this.object=this.className;
+    this.object='Selected '+this.className;
   }
   
   saveimage(){
