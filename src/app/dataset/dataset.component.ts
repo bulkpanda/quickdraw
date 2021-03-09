@@ -103,7 +103,7 @@ export class DatasetComponent implements AfterViewInit {
     });
     
   }
-
+  object='';
   private draw(prevPos: {x: number, y: number}, currPos: {x: number, y: number}) {
     if(!this.ctx){ return;}
 
@@ -128,12 +128,14 @@ export class DatasetComponent implements AfterViewInit {
   object_select(s:string){
     this.className=s;
     console.log(this.className)
+    this.object=this.className;
   }
   
   saveimage(){
     if (this.className == null){
       console.log('Not Updated!')
       this.not_updated()
+      this.object='Select a class';
       return;
     }
     var canvas: HTMLCanvasElement=this.canvas.nativeElement;
@@ -144,6 +146,7 @@ export class DatasetComponent implements AfterViewInit {
     this.http.post(environment.SERVER_URL + '/upload_canvas', {filename, image, className: this.className}, {responseType:'text'}).subscribe((res:any)=>{
     console.log(res, this.className)
     this.erase();
+    this.object=res;
     this.className=null;
     })
   }   

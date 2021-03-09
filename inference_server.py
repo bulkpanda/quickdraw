@@ -59,4 +59,4 @@ def upload_canvas():
     with open(f'{datasetPath}/{className}/image/{filename}', 'wb') as fh:
         fh.write(base64.decodebytes(image_data))
         
-    return "Got the image" + className    
+    return "Got the image " + className    
