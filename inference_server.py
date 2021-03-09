@@ -36,7 +36,7 @@ app = Flask(__name__)
 cors = CORS(app)
 datasetPath='inference'
 
-@app.route('/play', methods=['POST'])
+@app.route('/api/play', methods=['POST'])
 def play():
     data= json.loads(request.data.decode('utf-8'))
     image_data = data['image'].split(',')[1].encode('utf-8')
@@ -49,7 +49,7 @@ def play():
 #============================================Create Dataset=======================================================================
 datasetPath='data'
 
-@app.route('/upload_canvas', methods=['POST'])
+@app.route('/api/upload_canvas', methods=['POST'])
 def upload_canvas():
     data= json.loads(request.data.decode('utf-8'))
     image_data = data['image'].split(',')[1].encode('utf-8')

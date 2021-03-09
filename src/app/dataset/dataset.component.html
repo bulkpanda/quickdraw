@@ -48,7 +48,7 @@
                 
                 <div class="row pt-1" *ngFor='let ob of objects'>
 					<div class="col text-center">
-						<button type="button" class="btn style2 background1 shadow onHoverDark" (click)="object_select(ob.objectName)">
+						<button type="button" class="btn style2 shadow onHoverDark" [style.background]="ob.objcolor" (click)="object_select(ob.objectName)">
 							{{ob.objectName}}						
 						</button>
 					</div>

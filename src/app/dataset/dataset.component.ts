@@ -15,7 +15,7 @@ export class DatasetComponent implements AfterViewInit {
 
   isClicked:any = false;
   className:any;
-  
+  button_back="#6666bb";
   check(){
     console.log(this.isClicked)
   }
@@ -23,33 +23,43 @@ export class DatasetComponent implements AfterViewInit {
     {
       objectId:1,
       objectName:'Pencil',
+      objcolor:this.button_back,
     },{
       objectId:2,
       objectName:'Sun',
+      objcolor:this.button_back,
     },{
       objectId:3,
       objectName:'Flower',
+      objcolor:this.button_back,
     },{
       objectId:4,
       objectName:'Umbrella',
+      objcolor:this.button_back,
     },{
       objectId:5,
       objectName:'Spoon',
+      objcolor:this.button_back,
     },{
       objectId:6,
       objectName:'Tree',
+      objcolor:this.button_back,
     },{
       objectId:7,
       objectName:'Mug',
+      objcolor:this.button_back,
     },{
       objectId:8,
       objectName:'House',
+      objcolor:this.button_back,
     },{
       objectId:9,
       objectName:'Bird',
+      objcolor:this.button_back,
     },{
       objectId:10,
       objectName:'Hand',
+      objcolor:this.button_back,
     }
 
   ]
