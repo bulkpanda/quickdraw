@@ -8,7 +8,7 @@
 			<div class="col-md-2">
 				<div class="row mt-3">
 					<div class="col">
-						<button type= "button" class="btn" style="font-size: 15px; width: 100%; background: #fff748; color:#000" routerLink="\home">
+						<button type= "button" class="btn" style="font-size: 15px; width: 100%; background: #1b0448; color:#fff" routerLink="\home">
                     		<i class="fa fa-arrow-left"></i>  Back     
                 		</button>
 					</div>
@@ -30,7 +30,7 @@
 
 				<div class='row pt-2'>
 		
-					<div class="col text-center" style="font-size: 15px; width: 100%; background: #fff748; color: #000">
+					<div class="col text-center" style="font-size: 15px; width: 100%; background: #1b0448; color: #fff">
 						 {{object}}
 					</div>
 				
@@ -48,7 +48,7 @@
                 
                 <div class="row pt-1" *ngFor='let ob of objects'>
 					<div class="col text-center">
-						<button type="button" class="btn btn-primary shadow onHoverDark" style="width: 70%; font-size: 15px; color: #fff; font-family: 'PT Sans', sans-serif" [style.background]="ob.objcolor" (click)="object_select(ob.objectName)" [ngClass]="{active:className==ob.objectName}">
+						<button type="button" class="btn btn-primary shadow onHoverDark" style="width: 70%; font-size: 15px; color: #fff; font-family: 'PT Sans', sans-serif" (click)="object_select(ob.objectName)" [ngClass]="{active:className==ob.objectName}">
 							{{ob.objectName}}						
 						</button>
 					</div>

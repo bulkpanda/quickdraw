@@ -157,7 +157,6 @@ export class DatasetComponent implements AfterViewInit {
     console.log(res, this.className)
     this.erase();
     this.object=res;
-    this.className=null;
     })
   }   
 

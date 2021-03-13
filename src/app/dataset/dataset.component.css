@@ -6,7 +6,7 @@ body{
 .style1{                                    
     font-family: 'Dancing Script', cursive;
     font-family: 'Yellowtail', cursive;
-    color: #000;}
+    color: #fff;}
 
 
 .style2{
@@ -15,7 +15,7 @@ body{
     width: 70%;
     color: #fff;}  
      
-.onHoverDark:hover { background-color: #444 !important; color: #DDD !important;}
+.onHoverDark:hover { background-color: #0062cc !important; color: #DDD !important;}
 .background1{
     background: #6666bb
     }
