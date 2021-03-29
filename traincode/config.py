@@ -6,7 +6,7 @@ Created on Mon Mar  1 17:51:19 2021
 """
 import os
 os.environ['KMP_DUPLICATE_LIB_OK']='True'
-basepath='./googledataimages'
+basepath='./data'
 lr=1e-03
 savepath='./saved_models/google_data3'
 os.makedirs(savepath, exist_ok=True)

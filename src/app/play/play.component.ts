@@ -24,7 +24,7 @@ export class PlayComponent implements AfterViewInit {
   private ctx: CanvasRenderingContext2D;
 
   x = "black";
-  y = 2; 
+  y = 3; 
 
 
    ngAfterViewInit(){
