@@ -10,7 +10,7 @@ import {HttpClient} from '@angular/common/http';
   styleUrls: ['./dataset.component.css']
 })
 export class DatasetComponent implements AfterViewInit {
-
+  coord=[];
   constructor(private http: HttpClient) { }
 
   isClicked:any = false;
@@ -110,6 +110,13 @@ export class DatasetComponent implements AfterViewInit {
         y: res[1].clientY - rect.top
       };
       this.draw(prevPos, currPos);
+      var t=[];
+      t.push(prevPos.x);
+      t.push(prevPos.y)
+      this.coord.push(t);
+      //console.log(prevPos.x, prevPos.y);
+      console.log(this.coord);
+      // console.log(t);
     });
     
   }
@@ -130,6 +137,7 @@ export class DatasetComponent implements AfterViewInit {
   erase() {
         	
     this.ctx.clearRect(0, 0, this.width, this.height);
+    this.coord=[];
   }
   
   not_updated(){
@@ -153,7 +161,7 @@ export class DatasetComponent implements AfterViewInit {
     var filename = this.className + '_' + date + '.png';
     var image = canvas.toDataURL('image/png');
     // console.log(image);
-    this.http.post(environment.SERVER_URL + '/upload_canvas', {filename, image, className: this.className}, {responseType:'text'}).subscribe((res:any)=>{
+    this.http.post(environment.SERVER_URL + '/upload_canvas', {filename, image, coordinates: this.coord, className: this.className }, {responseType:'text'}).subscribe((res:any)=>{
     console.log(res, this.className)
     this.erase();
     this.object=res;

@@ -54,9 +54,13 @@ def upload_canvas():
     data= json.loads(request.data.decode('utf-8'))
     image_data = data['image'].split(',')[1].encode('utf-8')
     filename = data['filename']
+    fname=filename.split('.')[0]
     className = data['className']
+    coordinates = data['coordinates']
+    print(coordinates)
     os.makedirs(f'{datasetPath}/{className}/image', exist_ok=True)
     with open(f'{datasetPath}/{className}/image/{filename}', 'wb') as fh:
         fh.write(base64.decodebytes(image_data))
-        
+    os.makedirs(f'{datasetPath}/{className}/coordinates', exist_ok=True)
+    np.save(f'{datasetPath}/{className}/coordinates/{fname}.npy', coordinates)
     return "Got the image " + className    
