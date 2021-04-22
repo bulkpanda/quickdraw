@@ -16,7 +16,7 @@ pip install requirements.txt
 
 The built files from 'ng build --prod' are located in docs, can use them directly for deployment. <br>
 To run yourself clone the repo, go inside the folder quickdraw and run "ng build" command without the inverted comma. <br>
-Deployed on AWS server http://18.221.124.152 .
+Deployed on AWS server https://kunal.autonise.com .
 
 # The model
 
